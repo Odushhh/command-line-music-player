@@ -8,13 +8,16 @@ This is a simple (could be unnecessary) command-line application built using Pyt
 
 'Hacker-oriented' project right here. It gives you the following ;
 > Zero tolerance for search buttons, and
+
 > Enormous hate for modern GUIs
 
 Perfect for hackers if you think about it.
 
+
 P.S.: You'll need internet connection because the music is streamed from YouTube using `yt-dlp` and `python-vlc` 
 
 This Music Player is a simple command-line application that allows users to play, pause, skip, and manage a playlist of songs from YouTube. It utilizes the `python-vlc` library for audio playback and `yt-dlp` for downloading audio streams from YouTube. The player supports basic functionalities such as playing a specific song, pausing, resuming, skipping to the next song, going back to the previous song, and listing all songs in the playlist.
+
 
 ## Features
 
@@ -26,12 +29,14 @@ This Music Player is a simple command-line application that allows users to play
 - Display the metadata of the song playing.
 - List all songs in the playlist.
 
+
 ## Requirements/Libraries
 
 - Python 3.9 or higher
 - VLC Media Player (if you don't have it already then they should confiscate your PC)
 - `python-vlc` library
 - `yt-dlp` library
+
 
 ## Installation
 
@@ -49,6 +54,7 @@ This Music Player is a simple command-line application that allows users to play
 3. **Install VLC Media Player**(**Optional**):
    - Download and install VLC from the [official VLC website](https://www.videolan.org/vlc/).
      **Ensure that VLC is added to your system's PATH** (this is usually done automatically during installation).
+
 
 ## Usage
 
@@ -78,6 +84,7 @@ This Music Player is a simple command-line application that allows users to play
    - `help` or `h`: Show available commands.
    - `exit` or `q`: Exit the music player.
 
+
 ## Example Commands
 
 - To play the first song:
@@ -105,6 +112,7 @@ This Music Player is a simple command-line application that allows users to play
   list songs
   ```
 
+
 ## Testing (**Optional**)
 
 To ensure that all functionalities work correctly, you can run the provided test suite using `unittest`. 
@@ -114,11 +122,12 @@ To ensure that all functionalities work correctly, you can run the provided test
    python -m unittest test_music_player.py
    ```
 
+
 ## Legal Notice
 This tool is provided for personal use only. Users are responsible for complying with YouTube's Terms of Service and all applicable copyright laws. The script facilitates playback of YouTube content through legal open-source tools (mpv and youtube-dl) but does not download, store, or redistribute any copyrighted content. Please respect content creators' rights and YouTube's terms of service when using this tool.
 
-## License
 
+## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
