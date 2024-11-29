@@ -2,26 +2,25 @@
 
 ## Description
 
-As we speak, my PC has such terrible RAM that I literally can't stream any music on YouTube. So I've found an alternative - a Spotify/YouTube-esque music player that you can operate right from your CLI (Powershell, Bash, Zsh, CMD, etc)
+Have you ever had such terrible RAM that you literally cannot stream any music on YouTube? Here's an alternative if you're streaming from a potato - a Spotify/YouTube-esque music player that you can operate right from your CLI (Powershell, Bash, Zsh, CMD, etc)
 
-This is a simple (could be unnecessary) command-line application built using Python, where you can store a bunch of URLs from a YouTube playlist in a .txt file and control the playback without using the GUI. 
+This is a simple (could be unnecessary) command-line application built using Python, where you can store a bunch of songs and their URLs from a YouTube playlist into a .txt file, and control the playback using CLI commands. 
 
 'Hacker-oriented' project right here. It gives you the following ;
 > Zero tolerance for search buttons, and
 
 > Enormous hate for modern GUIs
 
-Perfect for hackers if you think about it.
 
 
 P.S.: You'll need internet connection because the music is streamed from YouTube using `yt-dlp` and `python-vlc` 
 
-This Music Player is a simple command-line application that allows users to play, pause, skip, and manage a playlist of songs from YouTube. It utilizes the `python-vlc` library for audio playback and `yt-dlp` for downloading audio streams from YouTube. The player supports basic functionalities such as playing a specific song, pausing, resuming, skipping to the next song, going back to the previous song, and listing all songs in the playlist.
+With this overkill tool you can play, pause, skip, and manage songs. The libraries `python-vlc` and `yt-dlp` are used for audio playback & for downloading YouTube audio streams, respectively. You can play a specific song based on its index (think of the songs arranged in an array), without having to use YouTube's GUI and even skip ads!
 
 
-## Features
+## Features/Functionalities
 
-- Command-line interface for easy interaction
+- Command-line interface
 - Play songs from a playlist of YouTube URLs.
 - Pause and resume playback.
 - Skip to the next song 
@@ -59,7 +58,7 @@ This Music Player is a simple command-line application that allows users to play
 ## Usage
 
 1. **Create a `songs.txt` file** and put a bunch of YouTube URLs of the songs you want to play, one URL per line. For example:
-   ```
+   ```bash
    https://www.youtube.com/watch?v=bnc7hO8UGXU
    https://www.youtube.com/watch?v=Yhivl6fln3s
    ```
@@ -87,7 +86,7 @@ This Music Player is a simple command-line application that allows users to play
 
 ## Example Commands
 
-- To play the first song:
+- To play the first song (index = 0):
   ```bash
   play 0
   ```
